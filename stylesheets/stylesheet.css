@@ -527,7 +527,7 @@ a.button {
   color: #fff;
 }
 a.navbutton {
-  width: 134px;
+  /*width: 134px;*/
   height: 58px;
   padding-top: 7px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
@@ -548,7 +548,7 @@ header a.button {
 }
 aside a.button {
   display: block;
-  width: 208px;
+  width: 138px;
   padding-left: 64px;
   margin-bottom: 20px;
   /*font-size: 21px;*/
@@ -556,8 +556,8 @@ aside a.button {
 }
 aside a.navbutton {
   display: block;
-  width: 138px;
-  height: 39px;
+  width: 202px;
+  height: 31px;
   margin-bottom: 20px;
   text-align: center;
   font-size: 21px;
