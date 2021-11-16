@@ -1,6 +1,5 @@
 ---
-layout: home
-title: TankadiN
+title: Home
 ---
 
 # Welcome to GitHub Pages
