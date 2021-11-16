@@ -558,7 +558,7 @@ aside a.navbutton {
   display: block;
   width: 202px;
   height: 31px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   text-align: center;
   font-size: 21px;
   background: transparent url(../images/nav-button.png) 0 0 no-repeat;
@@ -725,7 +725,7 @@ h6:before {
 }
 
 p {
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 a {
