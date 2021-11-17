@@ -550,7 +550,7 @@ a.button small {
   display: block;
   font-size: 11px;
 }
-header a.button {
+header a.gitbutton {
   position: absolute;
   top: 0;
   right: 0;
