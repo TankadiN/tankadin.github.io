@@ -567,7 +567,8 @@ aside a.button {
 
 div a.projbutton {
   display: block;
-  width: 626px;
+  width: 690px;
+  height: 118px;
   padding-left: 64px;
   margin-bottom: 20px;
   font-size: 21px;
