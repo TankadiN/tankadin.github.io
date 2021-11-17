@@ -512,13 +512,14 @@ aside#sidebar p.repo-owner a {
   font-weight: bold;
 }
 
-footer#bottombar p.repo-owner,
 footer#bottombar p.repo-owner a {
   font-weight: bold;
+  color: #9ddcff;
 }
 
 footer#bottombar {
-  background-color: #0080FF;
+  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
+  color: white;
 }
 
 #downloads {
