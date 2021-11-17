@@ -550,7 +550,7 @@ a.button small {
   display: block;
   font-size: 11px;
 }
-header a.gitbutton {
+header a.button {
   position: absolute;
   top: 0;
   right: 0;
@@ -579,7 +579,7 @@ div a.actbutton {
   width: 138px;
   padding-left: 64px;
   margin-bottom: 20px;
-  margin-right:10
+  margin-right: 10px;
   font-size: 21px;
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
