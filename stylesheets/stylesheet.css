@@ -568,8 +568,7 @@ aside a.button {
 div a.projbutton {
   display: block;
   width: 690px;
-  height: 118px;
-  padding-left: 64px;
+  height: 112px;
   margin-bottom: 20px;
   font-size: 21px;
   /*background: transparent url(../images/download-button.png) 0 0 no-repeat;*/
