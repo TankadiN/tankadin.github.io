@@ -565,11 +565,21 @@ aside a.button {
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
 
-div a.button {
+div a.projbutton {
   display: block;
+  width: 626px;
+  padding-left: 64px;
+  margin-bottom: 20px;
+  font-size: 21px;
+  /*background: transparent url(../images/download-button.png) 0 0 no-repeat;*/
+}
+
+div a.actbutton {
+  display: inline-block;
   width: 138px;
   padding-left: 64px;
   margin-bottom: 20px;
+  margin-right:10
   font-size: 21px;
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
