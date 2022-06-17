@@ -1,15 +1,37 @@
----
-layout: default
-title: TankadiN
----
-
-<div id="home">
-  <h1>Welcome!</h1>
-  <p>Here you can follow blogposts and view my projects. I hope you enjoy your visit :)<p>
-  <h1>Recent Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts limit:5 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<html>
+<head>
+	<link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+<div class="context">
+	<div class="logo">
+		<img src='../images/hexagon.png'></img>
+		<img src='../images/logo.png'></img>
+	</div>
+	<h1>T<span style="font-size: 40px;">ANKADI</span>N</h1>
+	<h2>Graphics Designer / Game Developer</h2>
+	<br>
+	<br>
+	<h2>Website coming soon...</h2>
 </div>
+
+<div class="area" >
+	<ul class="circles">
+		<img src='../images/hexagon.png'></img>
+		<img src='../images/hexagon.png'></img>
+		<img src='../images/hexagon.png'></img>
+		<img src='../images/hexagon.png'></img>
+		<img src='../images/hexagon.png'></img>
+		<img src='../images/hexagon.png'></img>
+		<img src='../images/hexagon.png'></img>
+		<img src='../images/hexagon.png'></img>
+		<img src='../images/hexagon.png'></img>
+		<img src='../images/hexagon.png'></img>
+	</ul>
+</div>
+
+<footer>
+	<p>Website Code © 2022 Bartosz 'TankadiN' Tuzikowski / Hosted using Github Pages © 2022 GitHub, Inc.</p>
+</footer>
+</body>
+</html>

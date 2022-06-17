@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<style>
+			* 
+			{
+				box-sizing: border-box;
+			}
+			body
+			{
+				background-color: #004381;				
+				font-family: sans-serif;
+				color: #FFFFFF;
+			}
+			a
+			{
+				background: #002e58;
+				color: #FFFFFF;
+				padding: 1em;
+			}
+			p:last-child
+			{
+				margin-bottom: 0;
+			}
+			ul
+			{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				margin-top: 2em;
+			}
+			li
+			{
+				background: #002e58;
+				padding: 1em;
+				margin-bottom: 1em;
+			}
+			h3 
+			{
+				margin-top: 0;
+				margin-bottom: 0;;
+				font-size: 1.35em;
+				color: #dddddd;
+			}
+			h5
+			{
+				margin-top: 0;
+				color: #dddddd;
+			}
+			img
+			{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				max-width: 600px;
+			}
+		</style>
+		<script>
+			var posts = document.getElementsByTagName("li")
+			function toggle_all()
+			{
+				for (i = 0; i< posts.length; i++)
+				{
+					if(posts[i].style.display == 'none')
+					{
+						posts[i].style.display = 'block'
+					}
+				}
+			}
+			function toggle_only_specific(classname)
+			{
+				for (i = 0; i< posts.length; i++)
+				{
+					if(posts[i].className == classname)
+					{
+						posts[i].style.display = 'block'
+					}
+					else
+					{
+						posts[i].style.display = 'none'
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="menu-bar">
+			<a onclick="toggle_all()" href="javascript:void(0);">Show all</a>
+			<a onclick="toggle_only_specific('general')" href="javascript:void(0);">Show general</a>
+			<a onclick="toggle_only_specific('game-update')" href="javascript:void(0);">Show game updates</a>
+		</div>
+		<ul>
+			<li class="game-update">
+				<h3>Parameters remake 1.0.0!</h3>
+				<h5>Game Updates // Posted 08.02.2022 by TankadiN</h5>
+				<img src="https://tankadin.github.io/images/project-banner-0.png">
+				<p>Our first game!</p>
+			</li>
+			<li class="general">
+				<h3>Lol!</h3>
+				<h5>General // Posted 08.02.2022 by TankadiN</h5>
+				<p>Some random bullshit</p>
+			</li>
+			<li class="general">
+				<h3>Launcher is live!</h3>
+				<h5>General // Posted 08.02.2022 by TankadiN</h5>
+				<p>We're happy to announce that official launcher is up and running!</p>
+			</li>
+		</ul>
+	</body>
+</html>
