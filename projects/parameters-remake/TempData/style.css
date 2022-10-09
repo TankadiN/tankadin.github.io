@@ -1,5 +1,10 @@
 body {
 	text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: #0080ff;
 }
 
 .area{
@@ -21,6 +26,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: 1;
 }
 
 .circles img{
