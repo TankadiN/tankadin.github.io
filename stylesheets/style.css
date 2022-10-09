@@ -164,6 +164,8 @@ footer {
     padding: 5px;
     background-color: #0080ff;
     color: #fff;
+    position: relative;
+    top: 96.9%;
 }
 
 @keyframes animate {
