@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face {
+    font-family: Earwig;
+    src: url('../fonts/earwig_factory.otf');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
 
 *{
     margin: 0px;
@@ -6,14 +15,18 @@
 }
 
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: Earwig, sans-serif;
+    background-image: url("../images/BackgroundStars.png");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
 .context {
     width: 100%;
     position: absolute;
-    top: 20vh;
+    top: 5vh;
     
 }
 
@@ -27,169 +40,114 @@ body{
     position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	width: 20%;
-    animation: spin 20s linear infinite
-}
-
-.logo img:nth-child(2){
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: 40%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 20%;
+	width: 15%;
+    animation: spin 4s linear infinite;
 }
 
 .context h1{
     text-align: center;
-    color: #0080ff;
-    font-size: 50px;
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: normal;
 }
 .context h2{
     text-align: center;
-    color: #0080ff;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: normal;
 }
 
-
-.area{
-    background: #ffffff;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    width: 100%;
-    height:100vh;
-    
-   
-}
-
-.circles{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.circles img{
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    
-}
-
-.circles img:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-}
-
-
-.circles img:nth-child(2){
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-}
-
-.circles img:nth-child(3){
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
-}
-
-.circles img:nth-child(4){
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-}
-
-.circles img:nth-child(5){
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
-}
-
-.circles img:nth-child(6){
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-}
-
-.circles img:nth-child(7){
-    left: 35%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 7s;
-}
-
-.circles img:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles img:nth-child(9){
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles img:nth-child(10){
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
+.context h3{
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: normal;
+    margin-left: 30px;
 }
 
 footer {
     display: flex;
+    background-image:  url("../images/Grass.png");
+    position: fixed;
+    width: 100%;
+    height: 35%;
+    left: 0;
+    bottom: 0;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+.navButton {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 35px;
+    pointer-events: all;
+}
+
+.navButton img:nth-child(1) {
+    width: 40px;
+}
+
+.credit {
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    margin-left: auto;
+    text-align: end;
+}
+
+/* PROJECTS PAGE */
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 10px;
+}
+
+.tiles a {
+    margin: 10px;
+}
+
+.game_description {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 30px;
+}
+.game_gallery img {
+    width: 400px;
+    margin: 10px;
+}
+
+.borderButton {
+    font-family: Earwig, sans-serif;
+    border: 5px solid #ffffff;
+    border-radius: 5px;
+    width: fit-content;
     padding: 5px;
-    background-color: #0080ff;
-    color: #fff;
-    position: relative;
-    top: 96.9%;
+}
+.borderButton a {
+    display: flex;
+    color: #ffffff;
+    font-size: 40px;
+    text-decoration: none;
+    align-items: center;
+}
+.borderButton img{
+    width: 50px;
+    margin-right: 10px;
 }
 
-@keyframes animate {
 
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 0.5;
+@keyframes spin{
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
     }
-
-    100%{
-        transform: translateY(-1200px) rotate(720deg);
-        opacity: 0.5;
+    
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
     }
-
-}
-
-@keyframes spin {
-
-    0%{
-        transform: rotate(0deg);
-    }
-
-    100%{
-        transform: rotate(720deg);
-    }
-
-}
+  }

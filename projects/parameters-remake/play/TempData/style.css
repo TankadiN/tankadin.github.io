@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Earwig;
+    src: url('../../../../fonts/earwig_factory.otf');
+}
+
+body {
+	text-align: center;
+    font-family: 'Earwig', sans-serif;
+}
+
+h1{
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 45px;
+}
+
+body{
+    background-image: url("../../../../images/BackgroundFull.png");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
