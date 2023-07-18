@@ -40,7 +40,7 @@ body{
     position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	width: 15%;
+	width: 200px;
     animation: spin 4s linear infinite;
 }
 
@@ -76,6 +76,12 @@ footer {
     pointer-events: none;
 }
 
+@media screen and (max-width: 1000px) {
+    .navButton {
+        display: none;
+    }
+}
+
 .navButton {
     color: #ffffff;
     text-decoration: none;
@@ -107,15 +113,35 @@ footer {
     margin: 10px;
 }
 
+@media screen and (max-width: 650px) {
+    .tiles a img {
+        width: 350px;
+    }
+}
+
 .game_description {
     font-family: Roboto, sans-serif;
     font-size: 20px;
     color: #ffffff;
     margin: 30px;
 }
+
+.game_buttons img {
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 10px
+}
+
 .game_gallery img {
     width: 400px;
     margin: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .game_gallery img {
+        width: 300px;
+        margin: 10px;
+    }
 }
 
 .borderButton {
@@ -137,6 +163,59 @@ footer {
     margin-right: 10px;
 }
 
+/* MOBILE NAVBAR */
+
+.mobileLinks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .mobileNav {
+        display: none;
+    }
+}
+
+.mobileNav {
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: all;
+    background-color: black;
+    width: 100%;
+}
+
+.navButtonMobile {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 50px;
+}
+
+.navButtonMobileIcon {
+    margin: 10px;
+}
+
+.navButtonMobileIcon img {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.hamburger_mobile {
+    display: flex;
+    justify-content: center;
+}
+
+.hamburger_mobile img {
+    width: 40px;
+    margin: 15px;
+}
+
+/* OTHER STUFF */
+
+.space {
+    margin-bottom: 325px;
+}
 
 @keyframes spin{
     from {

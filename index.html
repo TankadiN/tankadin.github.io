@@ -2,7 +2,9 @@
 <head>
 	<link rel="stylesheet" href="../stylesheets/style.css">
 	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="../javascripts/mobileNavbar.js" type="text/javascript"></script>
 	<title>TankadiN | Home</title>
 </head>
 <body>
@@ -26,10 +28,23 @@
 	<footer>
 		<a class="navButton" href="../">Home</a>
 		<a class="navButton" href="../projects/">Projects</a>
-		<!--<a class="navButton" href="">About me</a>-->
+		<!-- <a class="navButton" href="">Portfolio</a> -->
+		<!-- <a class="navButton" href="">About me</a> -->
 		<a class="navButton" href="https://github.com/TankadiN"><img src='../images/github.png'></a>
+		<div class="mobileNav">
+			<div class="mobileLinks" id="dropdown">
+				<a class="navButtonMobile" href="../">Home</a>
+				<a class="navButtonMobile" href="../projects/">Projects</a>
+				<!-- <a class="navButtonMobile" href="">Portfolio</a> -->
+				<!-- <a class="navButtonMobile" href="">About me</a> -->
+				<div>
+					<a class="navButtonMobileIcon" href="https://github.com/TankadiN"><img src='../images/github.png'></a>
+				</div>
+			</div>
+			<a class="hamburger_mobile" href="javascript:void(0);" onclick="displayDropdown()"><img src='../images/hamburger_mobile.png'></a>
+		</div>
 
-		<p class="credit">Website Code © 2022 Bartosz 'TankadiN' Tuzikowski<br>Hosted using Github Pages © 2022 GitHub, Inc.</p>
+		<!-- <p class="credit">Website Code © 2022 Bartosz 'TankadiN' Tuzikowski<br>Hosted using Github Pages © 2022 GitHub, Inc.</p> -->
 	</footer>
 </body>
 </html>
