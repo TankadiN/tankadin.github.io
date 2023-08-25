@@ -1,11 +1,11 @@
 @font-face {
-    font-family: Earwig;
-    src: url('../../../../fonts/earwig_factory.otf');
+    font-family: Cranberry;
+    src: url('../../../../fonts/cranberry_gin.ttf');
 }
 
 body {
 	text-align: center;
-    font-family: 'Earwig', sans-serif;
+    font-family: 'Cranberry', sans-serif;
 }
 
 h1{
@@ -15,9 +15,15 @@ h1{
 }
 
 body{
-    background-image: url("../../../../images/BackgroundFull.png");
+    background-image: url("../../../../images/projects/parameters/background.png");
     background-repeat: repeat-x;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
+    background-color: black;
 }
 
+canvas
+{
+    border: white solid 5px;
+    border-radius: 5px;
+}

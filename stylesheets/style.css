@@ -30,6 +30,11 @@ body{
     
 }
 
+.context-left {
+    top: 5vh;
+    position: absolute;
+}
+
 .logo {
     width: 100%;
     position: relative;
@@ -94,13 +99,6 @@ footer {
     width: 40px;
 }
 
-.credit {
-    color: #ffffff;
-    font-family: Roboto, sans-serif;
-    margin-left: auto;
-    text-align: end;
-}
-
 /* PROJECTS PAGE */
 .tiles {
     display: flex;
@@ -119,48 +117,96 @@ footer {
     }
 }
 
-.game_description {
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
+/* CHANGELOG */
+.changelog-title {
     color: #ffffff;
-    margin: 30px;
-}
-
-.game_buttons img {
-    height: 100px;
-    margin-right: 20px;
-    margin-bottom: 10px
-}
-
-.game_gallery img {
-    width: 400px;
-    margin: 10px;
+    font-weight: normal;
+    margin-left: 30px;
+    font-size: 70px;
 }
 
 @media screen and (max-width: 650px) {
-    .game_gallery img {
-        width: 300px;
-        margin: 10px;
+    .changelog-subtitle {
+        font-size: 16px;
     }
 }
 
-.borderButton {
-    font-family: Earwig, sans-serif;
-    border: 5px solid #ffffff;
-    border-radius: 5px;
-    width: fit-content;
-    padding: 5px;
+@media screen and (min-width: 650px) {
+    .changelog-subtitle {
+        font-size: 24px;
+    }
 }
-.borderButton a {
-    display: flex;
+
+.changelog-subtitle {
+    font-family: Roboto, sans-serif;
     color: #ffffff;
-    font-size: 40px;
-    text-decoration: none;
-    align-items: center;
+    margin-left: 30px;
 }
-.borderButton img{
-    width: 50px;
-    margin-right: 10px;
+
+@media screen and (max-width: 650px) {
+    .changelog-date {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .changelog-date {
+        font-size: 40px;
+    }
+}
+
+.changelog-date {
+    color: #ffffff;
+    font-weight: normal;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .changelog-log {
+        width: 85%;
+    }
+}
+
+.changelog-log {
+    border-bottom: #ffffff dotted;
+    margin-left: 30px;
+}
+
+.changelog-log  ul{
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    margin-left: 60px;
+}
+
+/* NAVBAR */
+footer {
+    display: flex;
+    background-image:  url("../images/Grass.png");
+    position: fixed;
+    width: 100%;
+    height: 35%;
+    left: 0;
+    bottom: 0;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .navButton {
+        display: none;
+    }
+}
+
+.navButton {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 35px;
+    pointer-events: all;
+}
+
+.navButton img:nth-child(1) {
+    width: 40px;
 }
 
 /* MOBILE NAVBAR */

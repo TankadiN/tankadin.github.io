@@ -1,0 +1,194 @@
+@font-face {
+    font-family: Cranberry;
+    src: url('../../fonts/cranberry_gin.ttf');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+	font-family: Cranberry, sans-serif;
+    background-image: url("../../images/projects/parameters/background.png");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* CONTENT */
+
+h1 {
+    color: #ffffff;
+    font-weight: normal;
+    margin: 0%;
+    margin-left: 30px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.context {
+    position: absolute;
+    top: 5vh;
+}
+
+.game_icons {
+    width: 250px;
+    margin-left: 30px;
+}
+
+.game_description {
+    /*font-family: Roboto, sans-serif;*/
+    font-size: 20px;
+    color: #ffffff;
+    margin: 30px;
+}
+
+.game_buttons img {
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 10px
+}
+
+.game_gallery img {
+    width: 400px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .game_gallery img {
+        width: 300px;
+        margin: 10px;
+    }
+}
+
+/* CHANGELOG */
+@media screen and (max-width: 650px) {
+    .changelog-date {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .changelog-date {
+        font-size: 40px;
+    }
+}
+
+.changelog-date {
+    color: #ffffff;
+    font-weight: normal;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .changelog-log {
+        width: 85%;
+    }
+}
+@media screen and (min-width: 650px) {
+    .changelog-log {
+        width: 50%;
+    }
+}
+
+.changelog-log {
+    border-bottom: #ffffff solid;
+    margin-left: 30px;
+}
+
+.changelog-log  ul{
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    margin-left: 60px;
+}
+
+/* NAVBAR */
+footer {
+    display: flex;
+    background-color: black;
+    border-top: #ffffff solid 5px;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    left: 0;
+    bottom: 0;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 1000px) {
+    .navButton {
+        display: none;
+    }
+}
+
+.navButton {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 35px;
+    pointer-events: all;
+}
+
+.navButton img:nth-child(1) {
+    width: 40px;
+}
+
+/* MOBILE NAVBAR */
+
+.mobileLinks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .mobileNav {
+        display: none;
+    }
+}
+
+.mobileNav {
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: all;
+    background-color: black;
+    width: 100%;
+}
+
+.navButtonMobile {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 50px;
+}
+
+.navButtonMobileIcon {
+    margin: 10px;
+}
+
+.navButtonMobileIcon img {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.hamburger_mobile {
+    display: flex;
+    justify-content: center;
+}
+
+.hamburger_mobile img {
+    width: 40px;
+    margin: 15px;
+}
+
+/* OTHER */
+.space {
+    margin-bottom: 150px;
+}
