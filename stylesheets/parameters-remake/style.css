@@ -113,7 +113,6 @@ p {
 footer {
     display: flex;
     background-color: black;
-    border-top: #ffffff solid 5px;
     position: fixed;
     width: 100%;
     height: 8%;
@@ -133,7 +132,6 @@ footer {
     text-decoration: none;
     margin: 15px;
     font-size: 35px;
-    pointer-events: all;
 }
 
 .navButton img:nth-child(1) {
@@ -152,9 +150,13 @@ footer {
     .mobileNav {
         display: none;
     }
+    footer {
+        border-top: #ffffff solid 5px;
+    }
 }
 
 .mobileNav {
+    border-top: #ffffff solid 5px;
     margin-left: auto;
     margin-right: auto;
     pointer-events: all;

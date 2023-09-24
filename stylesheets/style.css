@@ -263,6 +263,13 @@ footer {
     margin-bottom: 325px;
 }
 
+.line {
+    border-bottom: #ffffff 5px solid;
+    width: 30%;
+    padding: 5px;
+    margin: auto;
+}
+
 @keyframes spin{
     from {
       -moz-transform: rotateY(0deg);
