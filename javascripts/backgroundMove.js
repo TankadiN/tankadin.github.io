@@ -5,4 +5,4 @@ function Move()
     $('body').css('background-position', x + 'px 0');
 }
 
-setInterval("Move()", 10)
+var movenemt = setInterval(()=>{Move()}, 10)

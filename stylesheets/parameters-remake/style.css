@@ -140,6 +140,16 @@ footer {
 
 /* MOBILE NAVBAR */
 
+.defaultNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.defaultNav div {
+    display: flex;
+}
+
 .mobileLinks {
     display: none;
     flex-direction: column;
@@ -193,4 +203,8 @@ footer {
 /* OTHER */
 .space {
     margin-bottom: 150px;
+}
+
+.hidden {
+    display: none;
 }

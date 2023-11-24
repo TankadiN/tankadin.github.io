@@ -1,65 +1,19 @@
 <html>
     <head>
-        <link rel="stylesheet" href="../stylesheets/style.css">
-        <link rel="icon" type="image/x-icon" href="../images/logo.png">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link rel="icon" type="image/x-icon" href="/images/logo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-        <script src="../javascripts/mobileNavbar.js" type="text/javascript"></script>
+        <script src="/javascripts/mobileNavbar.js" type="text/javascript"></script>
+        <script src="/javascripts/hideAudio.js" type="text/javascript"></script>
+	    <script src="/javascripts/backgroundMove.js" type="text/javascript"></script>
         <title>TankadiN | Projects</title>
     </head>
     <body>
-        <script src="../javascripts/backgroundMove.js" type="text/javascript"></script>     
-        <div class="context">
-            <h1>Projects</h1>
-            <div class="line"></div>
-            <h1>Games</h1>
-            
-            <div class="tiles">
-                <a href="">
-                    <div class="projectTile">
-                        <img src="../images/projects/magic_warriors/header.png">
-                        <div class="tilebanner topBanner red">Page not available yet!</div>
-                    </div>
-                </a>
-                <a href="../projects/parameters-remake/">
-                    <div class="projectTile">
-                        <img src="../images/projects/parameters/header.png" alt="">
-                        <div class="tilebanner topBanner blue">v1.0.0 available now!</div>
-                        <div class="tileBanner bottomBanner yellow">HALTED</div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="projectTile">
-                        <img src="../images/projects/secret/project_c.png">
-                        <div class="tilebanner topBanner red">Page not available yet!</div>
-                        <div class="tileBanner bottomBanner blue">Coming Soon™</div>
-                    </div>
-                </a>
-            </div>
-            <div class="space"></div>
-
-        </div>
-
-        <footer>
-            <a class="navButton" href="../">Home</a>
-            <a class="navButton" href="../projects/">Projects</a>
-            <!-- <a class="navButton" href="">Portfolio</a> -->
-            <!-- <a class="navButton" href="">About me</a> -->
-            <a class="navButton" href="https://github.com/TankadiN"><img src='../images/github.png'></a>
-            <a class="navButton" href="../changelog/"><img src="../images/changelog.png"></a>
-            <div class="mobileNav">
-                <div class="mobileLinks" id="dropdown">
-                    <a class="navButtonMobile" href="../">Home</a>
-                    <a class="navButtonMobile" href="../projects/">Projects</a>
-                    <!-- <a class="navButtonMobile" href="">Portfolio</a> -->
-                    <!-- <a class="navButtonMobile" href="">About me</a> -->
-                    <div>
-                        <a class="navButtonMobileIcon" href="https://github.com/TankadiN"><img src='../images/github.png'></a>
-                        <a class="navButtonMobileIcon" href="../changelog/"><img src="../images/changelog.png"></a>
-                    </div>
-                </div>
-                <a class="hamburger_mobile" href="javascript:void(0);" onclick="displayDropdown()"><img src='../images/hamburger_mobile.png'></a>
-            </div>
-        </footer>
+        
+        <div load-html="/content/main/projects.xhtml" class="context"></div>
+        <footer load-html="/content/global/navbar.xhtml"></footer>
+		
+        <script src="/javascripts/elementLoader.js" type="text/javascript" onload="includeHTML()"></script>
     </body>
 </html>

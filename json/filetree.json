@@ -1,0 +1,46 @@
+{
+    "C:/" :[
+        {
+            "name": "Logs",
+            "type": "folder",
+            "size": "",
+            "path": "C:/Logs"
+        },
+        {
+            "name": "<span class='gray'>████████</span>",
+            "type": "<span class='gray'>█████</span>",
+            "size": "",
+            "path": ""
+        },
+        {
+            "name": "wolf.png",
+            "type": "file",
+            "size": "17 KB",
+            "content": "<div><img src='/images/logo.png'></div>"
+        },
+        {
+            "name": "project_cc.txt",
+            "type": "file",
+            "size": "8 B",
+            "content": "<div></br> C██e Ch███r█</br>---------------</br>Two ████████ wor██s ███ ███ real█████ ███ ███ digital█████ ███ s██n ██ ██ connect██.</br></br>██/██/2024</br></br></div>"
+        },
+        {
+            "name": "<span class='gray'>████████</span>",
+            "type": "<span class='gray'>███</span>",
+            "size": "<span class='gray'>██ B</span>",
+            "content": ""
+        },
+        {
+            "name": "<span class='gray'>██████</span>",
+            "type": "<span class='gray'>███</span>",
+            "size": "<span class='gray'>██ B</span>",
+            "content": ""
+        }],
+    "C:/Logs" :[
+        {
+            "name": "Log1.txt",
+            "type": "file",
+            "size": "16 KB",
+            "content": "<div></br>Log1 - 24/11/2023 - author: TankadiN</br>--------------------------------------</br>Today I found this computer when taking a walk around area, it looks pretty old and has basic OS installed, which is just a simple terminal with few simple commands like in any other computers.</br></br>Though, I didn't heard about this particular os... <span class='yellow'>WolfOS</span>...</br>As I was storing files here and my logs, I noticed they began to encrypt <span class='red'>(even corrupt)</span> themselves, must be because of machine's age, I don't even wanna know how old the disk is... </br>Decrypting and recovering might take some time...</br></br>Looks like I can modify it to my likings so there's that, maybe this terminal will be useful to me after all...</br></br></div>"
+        }]
+}   

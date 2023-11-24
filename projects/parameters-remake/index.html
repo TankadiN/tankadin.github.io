@@ -1,69 +1,18 @@
 <html>
     <head>
-        <link rel="stylesheet" href="../../stylesheets/parameters-remake/style.css">
-        <link rel="icon" type="image/x-icon" href="../../images/logo.png">
+        <link rel="stylesheet" href="/stylesheets/parameters-remake/style.css">
+        <link rel="icon" type="image/x-icon" href="/images/logo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-        <script src="../../javascripts/mobileNavbar.js" type="text/javascript"></script>
+        <script src="/javascripts/mobileNavbar.js" type="text/javascript"></script>
+        <script src="/javascripts/hideAudio.js" type="text/javascript"></script>
         <title>TankadiN | Parameters Remake</title>
     </head>
     <body>
         
-        <div class="context">
-            <h1>
-                <span style="font-size: 72px; line-height: 35px;">Parameters</span><br>
-                <span style="font-size: 48px;">Remake</span>
-            </h1>
-            <img class="game_icons" src="../../images/projects/parameters/icons.png"> 
-            <div class="game_description">
-                <div class="game_gallery">
-                    <img src="../../images/projects/parameters/1.jpg">
-                    <img src="../../images/projects/parameters/2.jpg">
-                    <img src="../../images/projects/parameters/3.jpg">
-                    <img src="../../images/projects/parameters/4.jpg">
-                </div>
-                <p><b>A game that despite the unsophisticated graphic design, it can pull you on for hours.</b></p>
-                <br>
-                <p>Parameters Remake is a rewrite of the 2012 game <b>Parameters</b> by <b>Nekogames</b>.</p>
-                <br>
-                <div class="game_buttons">
-                    <a href="../parameters-remake/play/" target="_blank"><img src="../../images/projects/parameters/download_button.png" alt=""></a>
-                    <!-- <a href=""><img src="../../images/download_button.png" alt=""></a> -->
-                </div>
-            </div>
-            <h1 style="font-size: 60px;">Changelog</h1>
-            <div class="changelog-log">
-                <br>
-                <h2 class="changelog-date">> 25 August 2023 - v1.0.0</h2>
-                <br>
-                <ul>
-                    <li>Initial release</li>
-                </ul>
-                <br>
-            </div>
-            <div class="space"></div>
-        </div>
+        <div load-html="/content/main/proj/parametersremake.xhtml" class="context"></div>
+        <footer load-html="/content/global/navbar.xhtml"></footer>
 
-        <footer>
-            <a class="navButton" href="../../">Home</a>
-            <a class="navButton" href="../">Projects</a>
-            <!-- <a class="navButton" href="">Portfolio</a> -->
-            <!-- <a class="navButton" href="">About me</a> -->
-            <a class="navButton" href="https://github.com/TankadiN"><img src='../../images/github.png'></a>
-            <a class="navButton" href="../../changelog/"><img src="../../images/changelog.png"></a>
-            <div class="mobileNav">
-                <div class="mobileLinks" id="dropdown">
-                    <a class="navButtonMobile" href="../../">Home</a>
-                    <a class="navButtonMobile" href="../">Projects</a>
-                    <!-- <a class="navButtonMobile" href="">Portfolio</a> -->
-                    <!-- <a class="navButtonMobile" href="">About me</a> -->
-                    <div>
-                        <a class="navButtonMobileIcon" href="https://github.com/TankadiN"><img src='../../images/github.png'></a>
-                        <a class="navButtonMobileIcon" href="../../changelog/"><img src="../../images/changelog.png"></a>
-                    </div>
-                </div>
-                <a class="hamburger_mobile" href="javascript:void(0);" onclick="displayDropdown()"><img src='../../images/hamburger_mobile.png'></a>
-            </div>
-        </footer>
+		<script src="/javascripts/elementLoader.js" type="text/javascript" onload="includeHTML()"></script>
     </body>
 </html>
