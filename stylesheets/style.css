@@ -241,7 +241,7 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-    .navButton {
+    .defaultNav {
         display: none;
     }
 }

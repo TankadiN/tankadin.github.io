@@ -121,8 +121,18 @@ footer {
     align-items: flex-end;
 }
 
+.defaultNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.defaultNav div {
+    display: flex;
+}
+
 @media screen and (max-width: 1000px) {
-    .navButton {
+    .defaultNav {
         display: none;
     }
 }
@@ -139,16 +149,6 @@ footer {
 }
 
 /* MOBILE NAVBAR */
-
-.defaultNav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.defaultNav div {
-    display: flex;
-}
 
 .mobileLinks {
     display: none;
